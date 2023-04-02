@@ -1,4 +1,4 @@
-# BugTracker :bug:
+# BugTracker :spider_web:
 ## Description :bulb:
 The bug-tracker is a simple web-based application that is supposed to help teams track and manage bugs and also create issues in their software projects.
 The app provide a centralized point where teams could create and assign specific tasks to the team members.
