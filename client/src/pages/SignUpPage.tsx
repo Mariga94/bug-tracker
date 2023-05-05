@@ -1,12 +1,13 @@
-import React from "react";
+import SignUpComponent from "../components/Auth/SignUp/Signup";
 
-const SignUp = () => {
-    return <div className="register">
-        <div className="logo">
-            <span></span>
-            <h2></h2>
-        </div>
-    </div>
-}
+const SignUpPage = () => {
+  return (
+    <>
+      <div className="page-content">
+        <SignUpComponent />
+      </div>
+    </>
+  );
+};
 
-export default SignUp;
+export default SignUpPage;

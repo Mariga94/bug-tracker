@@ -1,0 +1,90 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 372px;
+}
+
+.login__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 24px;
+  color: rgba(0, 0, 0 0.85);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  width: 372px;
+}
+
+.login__form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 372px;
+}
+
+.login__label {
+  margin-bottom: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.login__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 9px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+}
+
+.login__input::placeholder {
+  font-style: italic;
+}
+
+.login__buttons {
+  width: 368px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__button {
+  height: 40px;
+  border-radius: 2px;
+  padding: 6px, 56px, 6px, 56px;
+  width: 196px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  background-color: #1890ff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login__redirect--register {
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1890ff;
+}

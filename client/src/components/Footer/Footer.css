@@ -1,0 +1,8 @@
+.footer {
+    display: flex;
+    gap: 20px;
+    background: #F0F2F5;  
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: center;
+}

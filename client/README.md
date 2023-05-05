@@ -1,0 +1,1 @@
+The Auth component holds all the authentication components

@@ -1,0 +1,91 @@
+.add-project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 30px;
+  width: 500px;
+}
+
+.add-project__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 24px;
+  color: rgba(0, 0, 0 0.85);
+}
+
+.add-project__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  width: 372px;
+}
+
+.add-project__form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 372px;
+}
+
+.add-project__label {
+  margin-bottom: 3px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.add-project__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 9px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+}
+
+.add-project__input:placeholder-shown {
+  font-style: italic;
+}
+
+.add-project__buttons {
+  width: 368px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-project__button {
+  height: 40px;
+  border-radius: 2px;
+  padding: 6px, 56px, 6px, 56px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border: none;
+
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.add-project__button-cancel {
+  width: 100px;
+  background-color: #d9d9d9;
+}
+
+.add-project__button-create {
+  background-color: #1890ff;
+  color: #fff;
+  width: 196px;
+}

@@ -1,0 +1,117 @@
+.navbar,
+.navbar__menu .nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  height: 48px;
+  background-color: #fff;
+ 
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ /* box-shadow: inset 0px -1px 0px #f0f0f0; */
+}
+.navbar__logo {
+    margin-right: auto;
+}
+.navbar__title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 10px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.nav-link:active {
+  text-decoration: underline;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 10px;
+  width: 160px;
+  height: 48px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.nav-button {
+  /* button */
+  color: #fff;
+  background-color: #1890ff;
+  width: 114px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6.4px 15px;
+  gap: 10px;
+  border: 1px solid #1890ff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+  border-radius: 2px;
+  cursor: pointer;
+  /* text */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.nav-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px 0px 0px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0,0, 0.443);
+  background-image: url("../../assets/images/logo/icons8-user-32.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #F9F9F9;
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 10px;
+}

@@ -1,0 +1,21 @@
+.login__header {
+  display: flex;
+  gap: 20px;
+  background: #f0f2f5;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: center;
+  width: 455px;
+  margin-bottom: 40px;
+  margin-top: -100px;
+  height: 80px;
+  /* background-color: tomato; */
+}
+
+.login__header__title {
+  font-size: 33px;
+  line-height: 38px;
+  letter-spacing: 0.005em;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 38px;
+}

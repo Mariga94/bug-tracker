@@ -1,0 +1,13 @@
+.issue-container {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Roboto';
+}
+ table tr {
+    cursor: pointer;
+ }

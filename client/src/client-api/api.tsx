@@ -1,27 +1,50 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
+import { getLocalStorage } from "../utils/localstorage";
+const API_URL = "http://localhost:3000/api/v1/";
 
-const API_URL = "";
-
-const api = axios.create({
+export const api = axios.create({
   baseURL: API_URL,
+  withCredentials: true,
 });
 
+interface AuthArgs {
+  email: String;
+  password: String;
+}
+
 // Auth
-export const register = async () => {};
+export const signup = async ({ email, password }: AuthArgs) => {
+  try {
+    const response = await api.post("auth/register", { email, password });
+    return response;
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-export const login = async () => {};
+export const login = async ({ email, password }: AuthArgs) => {
+  try {
+    const response = await api.post("auth/login", { email, password });
+    localStorage.setItem("currentUser", JSON.stringify(response.data));
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-export const logout = async () => {};
+export const logout = async () => {
+  const response = await api.post("auth/logout");
+  localStorage.setItem("currentUser", null!);
+};
 // Users
-export const fetchUser = async () => {};
+export const fetchUser = async () => {
+  const res = await api.get(`users/${getLocalStorage}`);
+  console.log(res)
+};
+
 
 export const fetchUsers = async () => {};
 
 export const deleteUser = async () => {};
-// Projects
-export const createProject = async () => {};
-
-export const fetchProjects = async () => {};
 
 export const fetchProject = async () => {};
 
